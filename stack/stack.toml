@@ -1,0 +1,57 @@
+id = "io.paketo.stacks.tiny"
+homepage = "https://github.com/paketo-buildpacks/bionic-tiny-stack"
+maintainer = "Paketo Buildpacks"
+
+platforms = ["linux/amd64"]
+
+[build]
+  description = "ubuntu:bionic with compilers and shell utilities"
+  dockerfile = "./build.Dockerfile"
+  gid = 1000
+  shell = "/bin/bash"
+  uid = 1000
+
+  [build.args]
+    sources = """
+    deb http://archive.ubuntu.com/ubuntu bionic main universe
+    deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
+    deb http://archive.ubuntu.com/ubuntu bionic-security main universe
+    """
+
+    packages = """\
+    build-essential \
+    ca-certificates \
+    curl \
+    git \
+    jq \
+    libgmp-dev \
+    libssl1.1 \
+    libyaml-0-2 \
+    netbase \
+    openssl \
+    tzdata \
+    xz-utils \
+    zlib1g-dev \
+    """
+[run]
+  description = "distroless-like bionic"
+  dockerfile = "./run/run.Dockerfile"
+  gid = 1000
+  shell = "/sbin/nologin"
+  uid = 1000
+
+  [run.args]
+    packages = """\
+    base-files \
+    ca-certificates \
+    libc6 \
+    libssl1.1 \
+    netbase \
+    openssl \
+    tzdata \
+    zlib1g \
+    """
+
+[deprecated]
+  legacy-sbom = true
+  mixins = true
