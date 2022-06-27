@@ -16,20 +16,6 @@ RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selectio
   apt-get -y $package_args install $packages && \
   rm -rf /var/lib/apt/lists/* /tmp/*
 
-# ## debug version below
-# RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selections
-# RUN  export DEBIAN_FRONTEND=noninteractive
-# RUN  apt-get -y $package_args update
-# RUN  apt-get -y $package_args upgrade
-# RUN  apt-get -y $package_args install locales
-# RUN  locale-gen en_US.UTF-8
-# RUN  update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
-# RUN  apt-get -y $package_args install $packages
-# RUN  rm -rf /var/lib/apt/lists/* /tmp/*
-# RUN exit 1
-# ## debug version above
-
-
 RUN for path in /workspace /workspace/source-ws /workspace/source; do git config --system --add safe.directory "${path}"; done
 
 RUN curl -sSfL -o /usr/local/bin/yj https://github.com/sclevine/yj/releases/latest/download/yj-linux-amd64 \
