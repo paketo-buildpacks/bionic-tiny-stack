@@ -1,0 +1,4 @@
+PRETTY_NAME="Paketo Buildpacks Tiny Bionic"
+HOME_URL="https://github.com/paketo-buildpacks/bionic-tiny-stack"
+SUPPORT_URL="https://github.com/paketo-buildpacks/bionic-tiny-stack/blob/main/README.md"
+BUG_REPORT_URL="https://github.com/paketo-buildpacks/bionic-tiny-stack/issues/new"
