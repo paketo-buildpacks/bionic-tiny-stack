@@ -66,15 +66,11 @@ func testBuildpackIntegration(t *testing.T, context spec.G, it spec.S) {
 		builderConfigFilepath = builderConfigFile.Name()
 
 		_, err = fmt.Fprintf(builderConfigFile, `
-[lifecycle]
-  version = "%s"
-
 [stack]
   build-image = "%s:latest"
   id = "io.paketo.stacks.tiny"
   run-image = "%s:latest"
 `,
-			lifecycleVersion,
 			stack.BuildImageID,
 			stack.RunImageID,
 		)
@@ -109,7 +105,7 @@ func testBuildpackIntegration(t *testing.T, context spec.G, it spec.S) {
 		var err error
 		var logs fmt.Stringer
 		image, logs, err = pack.WithNoColor().Build.
-			WithPullPolicy("never").
+			WithPullPolicy("if-not-present").
 			WithBuildpacks(
 				goDistBuildpack,
 				buildPlanBuildpack,
