@@ -251,8 +251,6 @@ func testMetadata(t *testing.T, context spec.G, it spec.S) {
 			Expect(image).NotTo(HaveFile("/usr/share/ca-certificates"))
 
 			Expect(image).To(HaveFileWithContent("/etc/os-release", SatisfyAll(
-				// TODO: This is different from what we currently ship. Are we ok
-				// with changing?
 				ContainSubstring(`PRETTY_NAME="Paketo Buildpacks Tiny Bionic"`),
 				ContainSubstring(`HOME_URL="https://github.com/paketo-buildpacks/bionic-tiny-stack"`),
 				ContainSubstring(`SUPPORT_URL="https://github.com/paketo-buildpacks/bionic-tiny-stack/blob/main/README.md"`),
