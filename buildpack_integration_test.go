@@ -17,8 +17,6 @@ import (
 	"github.com/paketo-buildpacks/packit/v2/pexec"
 )
 
-const lifecycleVersion = "0.14.0"
-
 func testBuildpackIntegration(t *testing.T, context spec.G, it spec.S) {
 	var (
 		Expect     = NewWithT(t).Expect
@@ -75,8 +73,6 @@ func testBuildpackIntegration(t *testing.T, context spec.G, it spec.S) {
 			stack.RunImageID,
 		)
 		Expect(err).NotTo(HaveOccurred())
-
-		Expect(docker.Pull.Execute(fmt.Sprintf("buildpacksio/lifecycle:%s", lifecycleVersion))).To(Succeed())
 
 		Expect(archiveToDaemon(stack.BuildArchive, stack.BuildImageID)).To(Succeed())
 		Expect(archiveToDaemon(stack.RunArchive, stack.RunImageID)).To(Succeed())
