@@ -6,7 +6,7 @@ require (
 	github.com/google/go-containerregistry v0.8.1-0.20220209165246-a44adc326839
 	github.com/google/uuid v1.3.0
 	github.com/onsi/gomega v1.19.0
-	github.com/paketo-buildpacks/jam v1.3.0
+	github.com/paketo-buildpacks/jam v1.3.1
 	github.com/paketo-buildpacks/occam v0.9.0
 	github.com/paketo-buildpacks/packit/v2 v2.3.1
 	github.com/sclevine/spec v1.4.0
@@ -23,7 +23,7 @@ require (
 	github.com/containerd/containerd v1.6.3 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.11.4 // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
-	github.com/docker/docker v20.10.14+incompatible // indirect
+	github.com/docker/docker v20.10.16+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.0 // indirect
