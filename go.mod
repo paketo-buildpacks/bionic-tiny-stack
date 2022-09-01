@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/google/go-containerregistry v0.11.0
 	github.com/google/uuid v1.3.0
-	github.com/onsi/gomega v1.20.1
+	github.com/onsi/gomega v1.20.2
 	github.com/paketo-buildpacks/jam v1.4.5
 	github.com/paketo-buildpacks/occam v0.13.0
 	github.com/paketo-buildpacks/packit/v2 v2.4.2
@@ -47,9 +47,9 @@ require (
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	github.com/vbatts/tar-split v0.11.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/net v0.0.0-20220708220712-1185a9018129 // indirect
+	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
 	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f // indirect
-	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/genproto v0.0.0-20220624142145-8cd45d7dbd1f // indirect
 	google.golang.org/grpc v1.48.0 // indirect
