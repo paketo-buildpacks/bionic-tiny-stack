@@ -8,7 +8,7 @@ require (
 	github.com/onsi/gomega v1.20.2
 	github.com/paketo-buildpacks/jam v1.4.5
 	github.com/paketo-buildpacks/occam v0.13.1
-	github.com/paketo-buildpacks/packit/v2 v2.5.0
+	github.com/paketo-buildpacks/packit/v2 v2.5.1
 	github.com/sclevine/spec v1.4.0
 )
 
@@ -17,10 +17,10 @@ require (
 	github.com/BurntSushi/toml v1.2.0 // indirect
 	github.com/ForestEckhardt/freezer v0.0.11 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
-	github.com/Microsoft/hcsshim v0.9.3 // indirect
+	github.com/Microsoft/hcsshim v0.9.4 // indirect
 	github.com/cenkalti/backoff/v4 v4.1.3 // indirect
 	github.com/containerd/cgroups v1.0.3 // indirect
-	github.com/containerd/containerd v1.6.6 // indirect
+	github.com/containerd/containerd v1.6.8 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.12.0 // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
 	github.com/docker/docker v20.10.17+incompatible // indirect
@@ -47,12 +47,12 @@ require (
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	github.com/vbatts/tar-split v0.11.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/net v0.0.0-20220805013720-a33c5aa5df48 // indirect
+	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
-	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10 // indirect
+	golang.org/x/sys v0.0.0-20220907062415-87db552b00fd // indirect
 	golang.org/x/text v0.3.8-0.20211004125949-5bd84dd9b33b // indirect
 	google.golang.org/genproto v0.0.0-20220805133916-01dd62135a58 // indirect
-	google.golang.org/grpc v1.48.0 // indirect
+	google.golang.org/grpc v1.49.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
