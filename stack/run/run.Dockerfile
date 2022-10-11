@@ -17,6 +17,8 @@ RUN mkdir -p /tiny/tmp /tiny/var/lib/dpkg/status.d/
 RUN mkdir -p /tiny/home/nonroot \
     && chown 65532:65532 /tiny/home/nonroot
 
+RUN echo "Package: $packages\nPin: release c=multiverse\nPin-Priority: -1\n\nPackage: $packages\nPin: release c=restricted\nPin-Priority: -1\n" > /etc/apt/preferences
+
 # We can't use dpkg -i (even with --instdir=/tiny) because we don't want to
 # install the dependencies, and dpkg-deb has no way to ignore all dependencies;
 # each dependency must be explicitly listed
