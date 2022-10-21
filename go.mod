@@ -6,7 +6,7 @@ require (
 	github.com/google/go-containerregistry v0.12.0
 	github.com/google/uuid v1.3.0
 	github.com/onsi/gomega v1.22.1
-	github.com/paketo-buildpacks/jam v1.5.1
+	github.com/paketo-buildpacks/jam v1.6.0
 	github.com/paketo-buildpacks/occam v0.13.3
 	github.com/paketo-buildpacks/packit/v2 v2.6.1
 	github.com/sclevine/spec v1.4.0
@@ -53,7 +53,7 @@ require (
 	golang.org/x/sys v0.1.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	golang.org/x/tools v0.1.12 // indirect
-	google.golang.org/genproto v0.0.0-20220805133916-01dd62135a58 // indirect
+	google.golang.org/genproto v0.0.0-20220920201722-2b89144ce006 // indirect
 	google.golang.org/grpc v1.49.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
