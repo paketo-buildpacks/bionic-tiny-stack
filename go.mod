@@ -3,7 +3,7 @@ module github.com/paketo-buildpacks/bionic-tiny-stack
 go 1.18
 
 require (
-	github.com/google/go-containerregistry v0.12.1
+	github.com/google/go-containerregistry v0.13.0
 	github.com/google/uuid v1.3.0
 	github.com/onsi/gomega v1.26.0
 	github.com/paketo-buildpacks/jam v1.6.3
