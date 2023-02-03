@@ -7,7 +7,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/onsi/gomega v1.26.0
 	github.com/paketo-buildpacks/jam v1.6.3
-	github.com/paketo-buildpacks/occam v0.14.0
+	github.com/paketo-buildpacks/occam v0.15.0
 	github.com/paketo-buildpacks/packit/v2 v2.8.0
 	github.com/sclevine/spec v1.4.0
 )
