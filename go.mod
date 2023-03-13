@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/google/go-containerregistry v0.13.0
 	github.com/google/uuid v1.3.0
-	github.com/onsi/gomega v1.27.2
+	github.com/onsi/gomega v1.27.3
 	github.com/paketo-buildpacks/jam v1.7.0
 	github.com/paketo-buildpacks/occam v0.15.1
 	github.com/paketo-buildpacks/packit/v2 v2.8.2
@@ -26,7 +26,7 @@ require (
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/klauspost/compress v1.15.12 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
